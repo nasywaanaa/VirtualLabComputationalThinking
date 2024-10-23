@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brainwave - Discover</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button class="search-icon">
+                    <img src="assets/icons/Search.svg" alt="Search">
+                </button>
+            </div>
+    
+            <!-- Mode bar, user actions, and user info -->
+            <div class="navbar-right">
+                <!-- Mode bar -->
+                <div class="mode-bar">
+                    <img src="assets/icons/Light Mode.svg" alt="Light" class="icon">
+                    <img src="assets/icons/Dark Mode.svg" alt="Dark" class="icon">
+                </div>
+    
+                <!-- User actions -->
+                <div class="icons">
+                    <img src="assets/icons/Notification.svg" alt="Notifications" class="icon">
+                    <img src="assets/icons/Cart.svg" alt="Cart" class="icon">
+                    <img src="assets/icons/Setting.svg" alt="Settings" class="icon">
+                </div>
+    
+                <!-- User Info -->
+                <div class="user-info">
+                    <img src="assets/icons/User Avatar.png" alt="User Avatar" class="avatar">
+                    <div class="user-details">
+                        <span>Omar Botosh</span>
+                        <div class="status">Online</div>
+                    </div>
+                    <div class="badge">Creator</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="assets/images/Logo Brainwave.png" alt="Brainwave Logo">
+        </div>
+    
+        <div class="menu-header">MENU</div>
+        <ul class="menu">
+            <li><a href="index.html" class="menu-item discover">
+                <img src="assets/icons/Discover Icon Click.png" alt="Discover Icon"> Discover
+            </a></li>
+            <li><a href="computational.html" class="menu-item course">
+                <img src="assets/icons/Course Icon.png" alt="Course Icon"> Course
+            </a></li>
+            <li><a href="tracker.html" class="menu-item tracker">
+                <img src="assets/icons/Tracker Icon.png" alt="Tracker Icon"> Tracker
+            </a></li>
+            <li><a href="evaluation.html" class="menu-item evaluation">
+                <img src="assets/icons/Evaluation Icon.png" alt="Evaluation Icon"> Evaluation & Report
+            </a></li>
+        </ul>
+    
+        <!-- Garis harus muncul di atas general header -->
+        <div class="general-header">GENERAL</div>
+        <ul class="general-menu">
+            <li><a href="faq.html" class="menu-item faq">
+                <img src="assets/icons/FAQ Icon.png" alt="FAQ Icon"> FAQ
+            </a></li>
+            <li><a href="tutorial.html" class="menu-item tutorial">
+                <img src="assets/icons/Tutorial Icon.png" alt="Tutorial Icon"> Tutorial
+            </a></li>
+        </ul>
+    </aside>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Dictum.</p>
+                <div class="hero-meta">
+                    <span>Computational</span>
+                    <span>120k views • 1 week ago</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="circle"></div>
+            </div>
+        </section>
+
+        <section class="best-students">
+            <h2>Best Students</h2>
+            <ul>
+                <li>1. Omar Botosh - Rp 10.000.000</li>
+                <li>2. Paitlyn Rosser - Rp 10.000.000</li>
+                <li>3. Marlyn Lyn - Rp 10.000.000</li>
+                <li>4. Zaire George - Rp 10.000.000</li>
+                <li>5. Cristofer - Rp 10.000.000</li>
+            </ul>
+        </section>
+
+        <section class="subject-study-modules">
+            <h2>Subject Study Moduls</h2>
+            <div class="modules-filters">
+                <button>Top Subject</button>
+                <button>New Moduls</button>
+                <button>Saved Moduls</button>
+                <button>Trending</button>
+                <button class="filter-icon">⚙️ Filter</button>
+            </div>
+
+            <div class="modules-grid">
+                <div class="module-card">
+                    <img src="assets/images/math.png" alt="Mathematics">
+                    <h3>Mathematics</h3>
+                    <p>8 Moduls</p>
+                    <p>Study Time: 5 Hours 2 Minutes</p>
+                </div>
+
+                <div class="module-card">
+                    <img src="assets/images/physics.png" alt="Physics">
+                    <h3>Physics</h3>
+                    <p>6 Moduls</p>
+                    <p>Study Time: 21 Days</p>
+                </div>
+
+                <div class="module-card">
+                    <img src="assets/images/chemistry.png" alt="Chemistry">
+                    <h3>Chemistry</h3>
+                    <p>9 Moduls</p>
+                    <p>Study Time: 1 Day</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Brainwave. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
