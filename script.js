@@ -1,6 +1,5 @@
 const ctx = document.getElementById('myChart').getContext('2d');
 
-// Membuat chart bar
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -37,7 +36,7 @@ const myChart = new Chart(ctx, {
                         if (label) {
                             label += ': ';
                         }
-                        label += '$' + context.raw + ',00'; // Menampilkan earning dengan format dollar
+                        label += '$' + context.raw + ',00'; 
                         return label;
                     }
                 }

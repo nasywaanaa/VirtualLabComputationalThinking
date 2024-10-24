@@ -6,28 +6,28 @@ document.addEventListener('DOMContentLoaded', function() {
         data: {
             labels: ['Correct Answer', 'Wrong Answer', 'Not Answered'],
             datasets: [{
-                data: [87, 12, 4], // Data nilai untuk setiap bagian
-                backgroundColor: ['#5B2245', '#AA5D71', '#C0A5A6'], // Warna untuk setiap bagian
-                hoverOffset: 4 // Efek hover
+                data: [87, 12, 4], 
+                backgroundColor: ['#5B2245', '#AA5D71', '#C0A5A6'], 
+                hoverOffset: 4 
             }]
         },
         options: {
-            responsive: true, // Chart will be responsive
+            responsive: true, 
             plugins: {
                 tooltip: {
                     callbacks: {
                         label: function(tooltipItem) {
-                            return tooltipItem.label + ' : ' + tooltipItem.raw; // Menampilkan label dengan jumlah data
+                            return tooltipItem.label + ' : ' + tooltipItem.raw; 
                         }
                     }
                 }
             },
-            cutout: '70%', // Membuat lingkaran dalam yang lebih besar untuk efek donat
-            radius: '90%', // Mengatur radius keseluruhan donat
+            cutout: '70%',
+            radius: '90%',
             elements: {
                 arc: {
-                    borderWidth: 2, // Mengatur lebar border di setiap slice donat
-                    borderColor: '#f5f5f5' // Warna border antara setiap slice
+                    borderWidth: 2, 
+                    borderColor: '#f5f5f5' 
                 }
             }
         }
