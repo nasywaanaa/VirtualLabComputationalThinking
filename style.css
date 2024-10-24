@@ -813,11 +813,12 @@ canvas {
 }
 
 .tabs {
-    display: flex;
-    justify-content: flex-end;
+    display: flex;         /* Tambahkan ini untuk membuat elemen fleksibel */
+    justify-content: flex-start; /* Ini akan menempatkan tabs di kiri */
     gap: 20px;
     margin-bottom: 20px;
 }
+
 
 .tabs span {
     font-size: 16px;
@@ -896,7 +897,573 @@ ul li .dot.not-answered {
     background-color: #C0A5A6;
 }
 
+/*Discover*/
+.discover_heading {
+    margin-left: 260px; 
+    margin-top: 0px;
+}
 
+/* Main container to hold the slider and best student section */
+.discover_main {
+    display: flex;
+    align-items: stretch;  /* Ensures both sections stretch to the same height */
+    gap: 20px; 
+}
 
+/* Slider settings */
+
+.docover_main{
+    display: flex;
+    align-items: stretch;  /* Ensures both sections stretch to the same height */
+    gap: 20px; 
+}
+
+.slider {
+    flex: 3; /* Allows more space for the slider */
+    height: 300px;
+    background-image: url('assets/icons/Discover.svg');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 80px;
+    grid-gap: 20px;
+}
+
+.slide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.content h4 {
+    font-size: 14px;
+    color: #AA5D71;
+    font-weight: lighter;
+}
+
+.content h1 {
+    font-size: 32px;
+    color: #563540;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 14px;
+    color: #7A3B69;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.course-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.course-info h5 {
+    font-size: 16px;
+    color: #563540;
+    margin: 0 0 5px 10px;
+}
+
+.course-info p {
+    font-size: 12px;
+    color: #A7A0A0;
+    margin: 0 0 0 10px;
+}
+
+.best-student {
+    flex: 1;
+    background-color: #CFCFCD;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.best-student h3 {
+    font-size: 20px;
+    color: #563540;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.best-student ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.best-student li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+.student-rank {
+    font-size: 16px;
+    color: #563540;
+    margin-right: 10px;
+    font-weight: lighter;
+}
+
+.student-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.student-details {
+    flex: 1;
+}
+
+.student-name {
+    display: block;
+    font-size: 16px;
+    color: #563540;
+    font-weight: lighter;
+}
+
+.student-income {
+    font-size: 14px;
+    color: #7A3B69;
+}
+
+.subject_heading {
+    margin-left: 260px; 
+    margin-top: 0px;
+}
+
+/* Subject Study Moduls Section */
+.subject_study_moduls {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subject_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subject_heading h1 {
+    font-size: 24px;
+    color: #563540;
+}
+
+.subject_heading .tabs {
+    display: flex;
+    gap: 20px;
+}
+
+.subject_heading .tabs span {
+    font-size: 14px;
+    color: #A7A0A0;
+    cursor: pointer;
+}
+
+.subject_heading .tabs {
+    display: flex;
+    justify-content: flex-start; /* Ini akan meratakan tabs ke kiri */
+    gap: 20px;
+}
+
+.subject_heading .tabs span.active {
+    color: #563540;
+    font-weight: 600;
+    border-bottom: 2px solid #563540;
+}
+
+/* Subject Cards Grid */
+.subjects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Subject Card */
+.subject_card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subject_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.subject_img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.subject_details h3 {
+    font-size: 18px;
+    color: #563540;
+    margin-bottom: 10px;
+}
+
+.subject_details p {
+    font-size: 14px;
+    color: #7A3B69;
+    margin-bottom: 10px;
+}
+
+.study_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #AA5D71;
+}
+
+.study_info img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Bookmark icon */
+.bookmark_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .subjects_grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .subject_card {
+        padding: 15px;
+    }
+
+    .subject_img {
+        width: 80px;
+    }
+}
+
+/*Computational*/
+.computational_heading {
+    margin-left: 260px; 
+    margin-top: 0px;
+}
+.course-details-container {
+    display: flex;
+    gap: 20px; /* Memberi jarak antara course-meta dan course-stats */
+}
+
+.course-details-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Membagi kolom menjadi dua bagian, 2:1 */
+    align-items: left;
+    background-color: #CFCFCD;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px; /* Memberikan jarak antara kolom info dan statistik */
+    max-width: 95%;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membuat dua kolom: satu untuk label, satu untuk konten */
+    gap: 10px 20px; /* Jarak antara baris dan kolom */
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.course-meta p {
+    margin: 0;
+    color: #563540;
+    text-align: left;
+}
+
+.course-meta p strong {
+    font-weight: bold;
+    color: #563540;
+    text-align: left;
+}
+
+.course-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar icon dan teks statistik */
+    justify-content: space-between;
+    border-left: 1px solid #563540;
+    padding-left: 40px;
+}
+
+.stats-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 150px; /* Mengatur lebar tetap untuk setiap item statistik */
+}
+
+.stats-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.stats-item span {
+    font-size: 16px;
+    color: #563540;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .course-details-container {
+        grid-template-columns: 1fr; /* Tampilkan kolom satu-satu pada layar kecil */
+    }
+
+    .course-stats {
+        justify-content: flex-start;
+    }
+}
+
+/*Task Option*/
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Membuat 5 kolom */
+    gap: 35px; /* Jarak antar kotak */
+    margin-top: 20px;
+}
+
+.card {
+    position: relative;
+    width: 100%; /* Biarkan grid yang mengatur lebar */
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #000;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.card p {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+    z-index: 1;
+    text-align: center;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    z-index: 1;
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 1200px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr); /* Tampilkan 4 kolom di layar medium */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Tampilkan 2 kolom di layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Tampilkan kolom satu-satu pada layar sangat kecil */
+    }
+}
+
+/*FAQ*/
+.faq_heading {
+    margin-left: 260px; 
+    margin-top: 0px;
+}
+
+.faq-heading h1 {
+    font-size: 32px;
+    color: #563540;
+    font-weight: bold;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Items */
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-question {
+    font-size: 20px;
+    color: #563540;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    font-size: 16px;
+    color: #7A3B69;
+    line-height: 1.5;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .faq-heading {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .faq-container {
+        padding: 15px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+}
+
+/*Tutorial*/
+.tutorial_heading {
+    margin-left: 260px; 
+    margin-top: 0px;
+}
+
+.tutorial-heading h1 {
+    font-size: 32px;
+    color: #563540;
+    font-weight: bold;
+}
+
+/* Tutorial Container */
+.tutorial-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Tutorial Items */
+.tutorial-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tutorial-item:hover {
+    transform: translateY(-10px);
+}
+
+.tutorial-img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.tutorial-title {
+    font-size: 20px;
+    color: #563540;
+    margin-bottom: 10px;
+}
+
+.tutorial-description {
+    font-size: 16px;
+    color: #7A3B69;
+    line-height: 1.5;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .tutorial-heading {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .tutorial-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tutorial-title {
+        font-size: 18px;
+    }
+
+    .tutorial-description {
+        font-size: 14px;
+    }
+}
 
 
