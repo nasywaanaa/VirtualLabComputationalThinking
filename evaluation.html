@@ -70,8 +70,8 @@
                 <li><a href="index.html" class="menu-item discover">
                     <img src="assets/icons/Discover Icon.png" alt="Discover Icon" class="menu-icon"> Discover
                 </a></li>
-                <li><a href="computational.html" class="menu-item course active">
-                    <img src="assets/icons/Course Icon Click.png" alt="Course Icon" class="menu-icon"> Course
+                <li><a href="computational.html" class="menu-item course">
+                    <img src="assets/icons/Course Icon.png" alt="Course Icon" class="menu-icon"> Course
                 </a></li>
                 <li><a href="tracker.html" class="menu-item tracker">
                     <img src="assets/icons/Tracker Icon.png" alt="Tracker Icon" class="menu-icon"> Tracker
@@ -80,6 +80,20 @@
                     <img src="assets/icons/Evaluation Icon Click.png" alt="Evaluation Icon" class="menu-icon"> Evaluation & Report
                 </a></li>
             </ul>
+
+
+            <hr class="hr-divider">
+        
+            <div class="sidebar_general">GENERAL</div>
+            <ul class="general-menu">
+                <li><a href="faq.html" class="menu-item faq">
+                    <img src="assets/icons/FAQ Icon.png" alt="FAQ Icon" class="menu-icon"> FAQ
+                </a></li>
+                <li><a href="tutorial.html" class="menu-item tutorial">
+                    <img src="assets/icons/Tutorial Icon.png" alt="Tutorial Icon" class="menu-icon"> Tutorial
+                </a></li>
+            </ul>
+            
         </aside>
     </div>   
 
@@ -89,58 +103,70 @@
     
     <main>
         <div class="progress_overview">
-            <div class="overview_card">
-                <h3>Total Moduls</h3>
-                <p>12 Moduls</p>
-                <span>+10% than last month</span>
-            </div>
-            <div class="overview_card">
-                <h3>Average Grade</h3>
-                <p>87.5</p>
-                <span>+5% than last month</span>
-            </div>
-            <div class="overview_card">
-                <h3>Total Correct Answer</h3>
-                <p>87</p>
-                <span>+10% than last month</span>
-            </div>
-            <div class="overview_card">
-                <h3>Average Moduls</h3>
-                <p>22 Moduls/month</p>
-                <span>+10% than last month</span>
-            </div>
-        </div>
-
-        <div class="statistics_section">
-            <div class="chart">
-                <h3>Statistic</h3>
-                <canvas id="chartCanvas"></canvas>
-            </div>
-            <div class="tasks">
-                <h3>Tasks</h3>
-                <div class="task_chart">
-                    <p>Correct Answer: 87 Questions</p>
-                    <p>Wrong Answer: 12 Questions</p>
-                    <p>Not Answered: 4 Questions</p>
+            <div class="report_overview">
+                <div class="overview_card">
+                    <div class="overview_title">
+                        <img src="assets/icons/Total Moduls.svg" alt="Discover Icon" class="menu-icon-evaluation">
+                        <h3>Total Moduls</h3>
+                    </div>
+                    <p>12 Moduls</p>
+                    <span>+10% than last month</span>
+                </div>
+                <div class="overview_card">
+                    <div class="overview_title">
+                        <img src="assets/icons/Average Grade.svg" alt="Discover Icon" class="menu-icon-evaluation">
+                        <h3>Total Grade</h3>
+                    </div>
+                    <p>87.5</p>
+                    <span>+5% than last month</span>
+                </div>
+                <div class="overview_card">
+                    <div class="overview_title">
+                        <img src="assets/icons/Total Correct Answer.svg" alt="Discover Icon" class="menu-icon-evaluation">
+                        <h3>Total Correct Answer</h3>
+                    </div>
+                    <p>87</p>
+                    <span>+10% than last month</span>
+                </div>
+                <div class="overview_card">
+                    <div class="overview_title">
+                        <img src="assets/icons/Average Moduls.svg" alt="Discover Icon" class="menu-icon-evaluation">
+                        <h3>Average Moduls</h3>
+                    </div>
+                    <p>22 Moduls/month</p>
+                    <span>+10% than last month</span>
                 </div>
             </div>
-        </div>
-
-        <div class="modul_progress_section">
-            <div class="moduls_not_read">
-                <h3>Moduls Haven't Read</h3>
-                <ul>
-                    <li>Python Introduction - 2 Hours 2 Minutes</li>
-                    <li>Looping - 1 Hour 00 Minute</li>
-                    <li>Function and Method - 5 Hours 23 Minutes</li>
-                </ul>
-            </div>
-            <div class="computational_thinking">
-                <h3>Computational Thinking</h3>
-                <p>21 Moduls Left</p>
-                <p>Read Moduls: 87%</p>
-                <p>Quiz: 33%</p>
-                <p>Task: 23%</p>
+            
+            
+            
+            <!-- New section for the statistics and other data -->
+            <div class="stats_section">
+                <div class="main_stats_section">
+                    <div class="stats_section">
+                        <h3 class="chart-title">Statistic</h3>
+                        <div class="tabs">
+                            <span>Day</span>
+                            <span class="active">Week</span>
+                            <span>Month</span>
+                        </div>
+                        <canvas id="myChart" width="400" height="200"></canvas>
+                    </div>
+                    
+                    <div class="tasks_section">
+                        <h3>Tasks Overview</h3>
+                        <canvas id="tasksChart" width="300" height="300"></canvas>
+                        <ul>
+                            <li><span class="dot correct"></span> Correct Answer : 87 Questions</li>
+                            <li><span class="dot wrong"></span> Wrong Answer : 12 Questions</li>
+                            <li><span class="dot not-answered"></span> Not Answered : 4 Questions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="script.js"></script>
+                <script src="chart.js"></script>
             </div>
         </div>
     </main>
