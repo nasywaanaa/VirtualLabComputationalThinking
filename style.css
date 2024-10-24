@@ -1049,6 +1049,119 @@ ul li .dot.not-answered {
     margin-top: 0px;
 }
 
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        width: 260px;
+        height: 100%;
+        background-color: #fff;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .menu-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+        cursor: pointer;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .main_layout {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search_bar, .user_info {
+        margin: 10px 0;
+    }
+
+    .more_icons {
+        display: none; /* You can hide unnecessary icons on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .discover_main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .slider {
+        height: auto; /* Adjust the height to auto for small screens */
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .best-student {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .subjects_grid {
+        grid-template-columns: 1fr; /* Stack subjects in one column */
+    }
+
+    .subject_card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .subjects_grid {
+        grid-template-columns: 1fr 1fr; /* Display subjects in two columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .discover_heading h1, .subject_heading h1 {
+        font-size: 22px; /* Reduce font size for headings */
+    }
+
+    .content h1 {
+        font-size: 20px; /* Reduce content font size */
+    }
+
+    .student-details, .course-info {
+        font-size: 14px; /* Adjust text size */
+    }
+
+    .best-student h3 {
+        font-size: 18px; /* Adjust best-student section title */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_column {
+        margin-bottom: 20px;
+    }
+}
+
+
 /*Subject Study*/
 .subject_study_moduls {
     padding: 30px;
@@ -1436,23 +1549,87 @@ ul li .dot.not-answered {
 }
 
 @media (max-width: 768px) {
-    .tutorial-heading {
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        width: 260px;
+        height: 100%;
+        background-color: #fff;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .menu-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+        cursor: pointer;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    /* Adjust main layout to remove the sidebar margin */
+    .main_layout {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search_bar, .user_info {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .tutorial_heading {
+        margin-left: 0; /* Remove the margin for smaller screens */
         text-align: center;
     }
 
     .tutorial-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Stack tutorial items vertically on small screens */
     }
 
     .tutorial-title {
-        font-size: 18px;
+        font-size: 18px; /* Adjust font size */
     }
 
     .tutorial-description {
-        font-size: 14px;
+        font-size: 14px; /* Adjust font size */
     }
 }
+
+@media (max-width: 480px) {
+    .tutorial_heading h1 {
+        font-size: 22px;
+    }
+
+    .tutorial-item {
+        padding: 15px;
+    }
+
+    .tutorial-img {
+        width: 70px; /* Further reduce image size */
+    }
+
+    .tutorial-title {
+        font-size: 16px;
+    }
+
+    .tutorial-description {
+        font-size: 12px;
+    }
+}
+
 
 /*Tracker*/
 .tracker_heading {
@@ -1559,3 +1736,26 @@ ul li .dot.not-answered {
     }
 }
 
+@media (max-width: 768px) {
+    .navigation_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search_bar, .user_info {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search_bar, .user_info {
+        margin: 10px 0;
+    }
+}
