@@ -145,14 +145,14 @@ body {
 
 .user_name {
     font-size: 14px;
-    color: #563440;
+    color: #563540;
 }
 
 .user_badge {
     display: flex;
     align-items: center; 
     gap: 5px;
-    background-color: #563440;
+    background-color: #563540;
     color: white;
     padding: 2px 8px;
     border-radius: 5px;
@@ -184,7 +184,7 @@ body {
 }
 
 .arrow_down {
-    border: solid #563440;
+    border: solid #563540;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 5px;
@@ -241,7 +241,7 @@ ul.menu li:last-child {
 
 .menu-item {
     text-decoration: none; 
-    color: #563440; 
+    color: #563540; 
     display: flex; 
     align-items: center;
     gap: 16px; 
@@ -270,18 +270,23 @@ ul.menu li:last-child {
     padding: 20px;
 }
 
-/* Footer Styling */
+/* Footer */
 .site_footer {
-    background-color: #563440;
-    color: #EFEFEF; 
+    margin-top: 50px;
+}
+
+.site_footer {
+    background-color: #CFCFCD;
+    color: #EFEFEF;
     padding: 40px 20px;
     font-family: 'Poppins', sans-serif;
     max-width: calc(100% - 280px);
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: 0;
     width: 100%;
+    position: relative;
+    bottom: 0;
 }
-
 .footer_content {
     display: flex;
     justify-content: space-between;
@@ -362,3 +367,388 @@ ul.menu li:last-child {
     font-size: 14px;
     color: #FFFF;
 }
+
+/*Quiz page*/
+body, .quiz_box, .question_label, .input_label, .output_label, .answer_label, 
+.quiz_navigation button, .sidebar, .site_footer, .server_time_container, 
+.number {
+    background-color: #EFEFEF;
+    color: #563540; 
+}
+
+.quiz_navigation .retry_button, .quiz_navigation .back_button {
+    background-color: #EFEFEF; 
+    color: #563540;
+}
+
+.quiz_navigation .check_button, .quiz_navigation .next_button {
+    background-color: #563540; 
+    color: white; 
+}
+
+.footer_social a, .footer_column a {
+    color: #563540; 
+}
+
+.menu-item, .footer_copyright {
+    color: #563540;
+}
+
+.sidebar {
+    background-color: #EFEFEF; 
+}
+
+.site_footer {
+    background-color: #EFEFEF; 
+}
+
+
+.number {
+    background-color: rgba(86, 53, 64, 0.42); 
+}
+
+.number.green {
+    background-color: green !important;
+    color: white !important;
+}
+
+.number.orange {
+    background-color: orange !important;
+    color: white !important;
+}
+
+.number.red {
+    background-color: red !important;
+    color: white !important;
+}
+
+.number.active {
+    background-color: #563540 !important; /* Original active purple color */
+}
+
+
+.question_label, .input_label, .output_label, .answer_label {
+    background-color: #563540;
+    color: white;
+}
+
+.quiz_heading {
+    margin-left: 260px; 
+    margin-top: 0px;
+}
+
+.quiz_heading h1 {
+    font-size: 40px;
+    color: #563540;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 260px;
+    max-width: calc(100% - 240px); 
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.quiz_box {
+    background-color: #CFCFCD;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px; 
+    height: auto;
+    text-align: left;
+    margin-bottom: 40px; 
+}
+
+.quiz_box h2,
+.quiz_box .time_limit,
+.quiz_box .memory_limit {
+    text-align: center; 
+    color: #563540; 
+}
+
+
+.question_label, .input_label, .output_label, .answer_label {
+    display: inline-block;
+    background-color: #563540;
+    color: white;
+    width: 97px;  
+    height: 22px;  
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px; 
+    line-height: 22px;
+}
+
+textarea {
+    width: 100%; 
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EFEFEF;
+    resize: none; 
+    overflow: hidden; 
+    font-size: 16px;
+    box-sizing: border-box;
+    min-height: 50px; 
+    margin-bottom: 20px; 
+}
+
+.quiz_navigation {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px; 
+    justify-content: space-between;
+}
+
+.quiz_navigation_left, .quiz_navigation_right {
+    display: flex;
+    gap: 10px;
+}
+
+.quiz_navigation_left {
+    justify-content: flex-start;
+}
+
+.quiz_navigation_right {
+    justify-content: flex-end;
+}
+
+.quiz_navigation button {
+    padding: 10px 20px;
+    background-color: #563540;
+    color: white;
+    width: 150px; 
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0; 
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.quiz_navigation button:hover {
+    background-color: #9A879C;
+    color: #FFFFFF;
+}
+
+.quiz_navigation .check_button, 
+.quiz_navigation .next_button {
+    width: 150px; 
+}
+
+.quiz_navigation .retry_button, 
+.quiz_navigation .back_button {
+    background-color: #FFFFFF; 
+    color: #563540; 
+}
+
+.quiz_sidebar {
+    width: 30%; 
+    margin-left: 20px;
+}
+
+.question_info_box {
+    background-color: #CFCFCD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    color: #563540;
+}
+
+.question_numbers {
+    margin-bottom: 20px;
+}
+
+.numbers_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
+}
+
+.number {
+    padding: 10px;
+    background-color: rgba(86, 53, 64, 0.42);
+    color: #FFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+}
+
+.number.active {
+    background-color: #563540;
+    color: white;
+}
+
+.number:hover{
+    background-color: #563540;
+}
+
+.exam_info {
+    margin-top: 20px;
+    background-color: #CFCFCD;
+    color: #563540;
+}
+
+
+.server_time_container {
+    background-color: #9A879C;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px; 
+    padding: 0 15px;
+    box-sizing: border-box;
+    line-height: 55px; 
+    margin-bottom: 20px;
+}
+
+
+.server_time {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.course_info, .exam_type {
+    margin-top: 20px; 
+}
+
+.course_info p, .exam_type p {
+    font-size: 12px;
+    color: #563540;
+    margin-bottom: 0px; 
+}
+
+.course_info strong, .exam_type strong {
+    font-size: 14px;
+    color: #563540;
+    margin-top: 0; 
+    line-height: 1.2; 
+}
+
+.grade_box {
+    background-color: #9A879C; /* Match the color from the second image */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grade_row, .case_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.grade_title {
+    display: inline-block;
+    background-color: #563540;
+    color: white;
+    width: 97px;  
+    height: 22px;  
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px; 
+    line-height: 22px;
+}
+
+.grade_value {
+    color: #563540;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.case_label {
+    color: #563540;
+    font-size: 14px;
+}
+
+.case_value {
+    color: #563540;
+    font-size: 14px;
+}
+
+/*Evaluation*//* General styles for progress overview container */
+.progress_overview {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Styles for each individual card */
+.overview_card {
+    background-color: #eaeaea; /* Light grey background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    width: 23%; /* Ensure all cards are of equal width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Styling for the heading in the card */
+.overview_card h3 {
+    font-size: 18px;
+    color: #705d67; /* Darker text for titles */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the main number or text in the card */
+.overview_card p {
+    font-size: 24px;
+    color: #4a3c47; /* Bold and bigger for emphasis */
+    margin-bottom: 10px;
+}
+
+/* Styling for the percentage change */
+.overview_card span {
+    font-size: 14px;
+    color: #4caf50; /* Green color for positive growth */
+    display: flex;
+    align-items: center;
+}
+
+.overview_card span::before {
+    content: "↑";
+    color: #4caf50;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+/* Ensuring the layout is responsive */
+@media (max-width: 768px) {
+    .progress_overview {
+        flex-direction: column;
+    }
+
+    .overview_card {
+        width: 100%; /* Make the cards full width on small screens */
+        margin-bottom: 20px;
+    }
+}
+
